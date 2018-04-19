@@ -113,6 +113,13 @@ We recommend that you run your database on a database hosting service. You can [
 
 We are working on a domain transfer tool to make this process easy. In the meantime you can contact us at [support@zeit.co](mailto:support@zeit.co?subject=Domain%20Transfer) with the domain you would like to transfer.
 
+If you want to move a domain between two ZEIT accounts or teams you could do it running the following commands:
+
+1. Run \`now domain rm domain.com\` inside the current owner
+2. Run \`now domain add domain.com\` inside the desired owner
+
+After this the new owner will be able to use the domain.
+
 ## Can I Use docker-compose with Now?
 
 At the moment ${<Now color="#000" />} does not support docker-compose. Keep an eye on the [open issue on GitHub](https://github.com/zeit/now-cli/issues/294) to know when it will be supported.
